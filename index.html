@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <p>C*zinho hoje?</p>
+        <div class="buttons-container">
+            <button>
+                <a href="https://api.whatsapp.com/send?phone=5511958627808&text=Hoje%20%C3%A9%20dia%20de%20Maldade!%F0%9F%98%88">Sim</a>
+            </button>
+            <button id="no">Não</button>
+        </div>
+    </div>
+</body>
+<script>
+    let button = document.getElementById('no');
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+
+    button.addEventListener('mouseover', function(){
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+</script>
+</html>
